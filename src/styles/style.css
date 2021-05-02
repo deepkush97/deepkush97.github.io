@@ -6,6 +6,9 @@ main {
   width: 94%;
   min-height: 90vh;
 }
+.sidebar-container {
+  padding-top: 6rem;
+}
 .sidebar-content {
   display: flex;
   flex-direction: column;
