@@ -1,0 +1,17 @@
+.sidebar {
+  width: 10%;
+  padding: 0rem 1rem;
+}
+main {
+  width: 94%;
+  min-height: 90vh;
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.logo-link {
+  margin-top: 1.2rem;
+}
