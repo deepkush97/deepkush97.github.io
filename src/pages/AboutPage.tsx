@@ -4,7 +4,7 @@ export const AboutPage = () => {
   return (
     <>
       <PageLayout title="About">
-        <div className="px-5">
+        <div className="px-sm-5">
           <div className="d-flex align-items-center mb-3">
             <h2 className="flex-grow-1 m-0">Hi,</h2>
             <div className="font-weight-bolder">
