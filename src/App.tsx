@@ -12,7 +12,7 @@ export const App = () => {
       <NavBar />
       <div className="d-flex">
         <SideBar />
-        <main>
+        <main className="container p-3">
           <Route path="/" component={HomePage} />
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/resume" component={ResumePage} />
