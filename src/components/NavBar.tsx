@@ -1,8 +1,8 @@
 import { Navbar, Nav } from "react-bootstrap";
-
+import { LinkContainer } from "react-router-bootstrap";
 export const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="light" expand="lg" sticky="top" className="mx-1 mt-1">
       <Navbar.Brand href="/">
         <img
           src="./logo.png"
@@ -17,11 +17,18 @@ export const NavBar = () => {
       <Navbar.Toggle aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
         <Nav className="ml-auto mr-5">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/projects">Projects</Nav.Link>
-          <Nav.Link href="/resume">Resume</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <LinkContainer to="/">
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/projects">
+            <Nav.Link>Projects</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/about">
+            <Nav.Link>About</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/contact">
+            <Nav.Link>Contact</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
