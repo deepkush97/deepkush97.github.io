@@ -55,3 +55,56 @@ main {
 .display-8 {
   font-size: 1.2rem;
 }
+
+.tech-stack {
+  position: relative;
+  text-align: center;
+}
+
+.tech-stack .stack-text {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  padding: 0.2em 1em;
+  max-width: 80%;
+}
+
+.tech-stack .stack-text:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4em;
+  right: 0;
+  border-width: 2px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #333;
+  border-radius: 5px 5px 5px 5px/25px 25px 25px 5px;
+}
+
+.tech-stack .stack-text:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4em;
+  right: 0;
+  border-width: 2px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: #333;
+  border-radius: 5px 5px 5px 5px/25px 25px 25px 5px;
+}
+
+.project-card {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+  }
+}
