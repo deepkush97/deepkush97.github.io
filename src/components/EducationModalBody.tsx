@@ -1,4 +1,4 @@
-import { Button, Card, Modal } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 export const EducationModalBody = () => {
   const educationArray = [
