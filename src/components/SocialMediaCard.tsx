@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
 interface SocialMediaCardProps {
   url: string;
@@ -16,17 +16,17 @@ export const SocialMediaCard: FC<SocialMediaCardProps> = ({
 }) => {
   return (
     <Col md={3} className="px-2 mb-3">
-      <div className="card ">
-        <div className="card-body text-center">
+      <Card>
+        <Card.Body className="text-center">
           <h4 className="card-title">
             <i className={`${iconClass} fa-3x`}></i>
           </h4>
-          <p className="card-text">{description}</p>
-          <a href={url} className="card-link">
+          <Card.Text>{description}</Card.Text>
+          <Card.Link href={url} target="_blank" rel="noreferrer">
             {linkText}
-          </a>
-        </div>
-      </div>
+          </Card.Link>
+        </Card.Body>
+      </Card>
     </Col>
   );
 };
