@@ -115,3 +115,39 @@ main {
 .modal-footer {
   border-top: none;
 }
+
+.technical-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technical-skill-item {
+  width: 48%;
+  margin: 2%;
+}
+
+.technical-skill-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.technical-skill-item:nth-of-type(2n + 1) {
+  margin-left: 0;
+}
+
+.soft-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.soft-skill-item {
+  width: 48%;
+  margin: 1%;
+}
+
+.soft-skill-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.soft-skill-item:nth-of-type(2n + 1) {
+  margin-left: 0;
+}
