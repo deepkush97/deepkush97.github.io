@@ -8,6 +8,8 @@ export const SideBar = () => {
           <div className="sidebar-content">
             <a
               href="mailto:kushwaha97deepanshu@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="logo-link"
             >
               <OverlayTrigger
@@ -17,7 +19,12 @@ export const SideBar = () => {
                 <i className="far fa-envelope fa-2x"></i>
               </OverlayTrigger>
             </a>
-            <a href="https://github.com/deepkush97" className="logo-link">
+            <a
+              href="https://github.com/deepkush97"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-link"
+            >
               <OverlayTrigger
                 placement="right"
                 overlay={<Tooltip id="github-tooltip">Github</Tooltip>}
@@ -27,6 +34,8 @@ export const SideBar = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/leftisfame/"
+              target="_blank"
+              rel="noreferrer"
               className="logo-link"
             >
               <OverlayTrigger
@@ -38,6 +47,8 @@ export const SideBar = () => {
             </a>
             <a
               href="https://www.instagram.com/leftisfame"
+              target="_blank"
+              rel="noreferrer"
               className="logo-link"
             >
               <OverlayTrigger
