@@ -2,6 +2,7 @@ import { Card, Accordion } from "react-bootstrap";
 
 const experienceArray = [
   {
+    key: "third",
     companyName: "AtliQ Technologies",
     location: "Vadodara, Gujarat",
     designation: "Software Engineer",
@@ -12,6 +13,7 @@ const experienceArray = [
     ],
   },
   {
+    key: "second",
     companyName: "Matrix Comsec Private Limited",
     location: "Vadodara, Gujarat",
     designation: "Engineer (Software Department)",
@@ -23,6 +25,7 @@ const experienceArray = [
     ],
   },
   {
+    key: "first",
     companyName: "SSM Infotech Private Limited",
     location: "Surat, Gujarat",
     designation: "Software Engineer",
@@ -38,14 +41,18 @@ const experienceArray = [
 
 export const ExperienceModalBody = () => {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion defaultActiveKey="third">
       {experienceArray.map(
-        (
-          { companyName, location, designation, timePeriod, mentionablePoints },
-          index
-        ) => (
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey={`${index}`}>
+        ({
+          companyName,
+          location,
+          designation,
+          timePeriod,
+          mentionablePoints,
+          key,
+        }) => (
+          <Card key={key}>
+            <Accordion.Toggle as={Card.Header} eventKey={key}>
               <div className="d-flex align-items-center justify-content-between ">
                 <div className="d-flex flex-column">
                   <div>
@@ -57,7 +64,7 @@ export const ExperienceModalBody = () => {
                 <span>{timePeriod}</span>
               </div>
             </Accordion.Toggle>
-            <Accordion.Collapse eventKey={`${index}`}>
+            <Accordion.Collapse eventKey={key}>
               <Card.Body>
                 <ul>
                   {mentionablePoints.map((point, pointIndex) => (
