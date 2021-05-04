@@ -6,10 +6,10 @@ interface PageLayoutProps {
 
 export const PageLayout: FC<PageLayoutProps> = ({ title, children }) => {
   return (
-    <>
+    <div className="page-animation">
       <h1 className="text-center display-3">{title}</h1>
       <hr />
       <div className="px-3">{children}</div>
-    </>
+    </div>
   );
 };
