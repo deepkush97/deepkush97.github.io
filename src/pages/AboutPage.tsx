@@ -17,7 +17,7 @@ export const AboutPage = () => {
             Engineering in 2019 from Government Engineering College, Dahod.
             <br /> I have a keen passion to build beautiful and eye-sparkling
             software with a standard and well-built code base. I'm a person with
-            a very enthusiastic and dow-to-earth personality, but I like to
+            a very enthusiastic and down-to-earth personality, but I like to
             watch stars and explore nature. I like to spend my time at work,
             developing, reading blogs and articles, and listening to music. I
             even engage myself in discussing, sharing, and absorbing knowledge
