@@ -12,12 +12,12 @@ export const App = () => {
       <NavBar />
       <div className="d-flex">
         <SideBar />
-        <main className="container p-3">
-          <Route path="/" component={HomePage} />
-          <Route path="/projects" component={ProjectsPage} />
-          <Route path="/resume" component={ResumePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/contact" component={ContactPage} />
+        <main className="container p-3 ">
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/resume" component={ResumePage} />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/contact" component={ContactPage} />
         </main>
       </div>
     </Router>
