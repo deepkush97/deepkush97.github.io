@@ -15,6 +15,7 @@ export const ResumePage = () => {
     <PageLayout title="Resume">
       <div className="d-flex flex-column px-3">
         <Button
+          variant="outline-secondary"
           className=" btn-outline-link mb-2 p-4"
           onClick={() => setSkillsModalOpen(true)}
         >
@@ -32,6 +33,7 @@ export const ResumePage = () => {
           <SkillsModalBody />
         </ModalWrapper>
         <Button
+          variant="outline-secondary"
           className=" btn-outline-link mb-2 p-4"
           onClick={() => setExperienceModalOpen(true)}
         >
@@ -49,7 +51,8 @@ export const ResumePage = () => {
           <ExperienceModalBody />
         </ModalWrapper>
         <Button
-          className=" btn-outline-link p-4"
+          variant="outline-secondary"
+          className="p-4"
           onClick={() => setEducationModalOpen(true)}
         >
           <>
