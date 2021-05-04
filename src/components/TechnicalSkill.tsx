@@ -4,7 +4,7 @@ const technicalSkills = [
   {
     key: "backend",
     title: "Back-End Development",
-    text: "ASP.NET Core, WebAPI, NodeJS, Laravel",
+    text: "NodeJS, ASP.NET Core, WebAPI, Laravel",
   },
   {
     key: "frontend",
