@@ -29,13 +29,13 @@ export const TechnicalSkill = () => {
       {technicalSkills.map(({ key, title, text }) => (
         <Card key={key} className="technical-skill-item p-3">
           <Card.Title>{title}</Card.Title>
-          <Card.Text>
+          <div>
             <ul>
               {text.split(", ").map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
-          </Card.Text>
+          </div>
         </Card>
       ))}
     </div>
