@@ -18,10 +18,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({
     <Card className="m-3 project-card">
       <Card.Header>
         <Card.Link href={url} target="_blank" rel="noreferrer">
-          <Card.Title className=" text-center m-0">{title}</Card.Title>
+          <Card.Title className="text-center m-0">{title}</Card.Title>
         </Card.Link>
       </Card.Header>
-      <Card.Title></Card.Title>
       <Card.Body className="text-center">
         <Card.Text className="display-8 text-weight-bolder ">
           {description}
