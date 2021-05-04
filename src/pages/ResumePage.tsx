@@ -6,54 +6,38 @@ import { ExperienceModalBody } from "../components/ExperienceModalBody";
 import { SkillsModalBody } from "../components/SkillsModalBody";
 import { ModalWrapper } from "../components/ModalWrapper";
 
+type ModalType = "Education" | "Experience" | "Skills" | "";
 export const ResumePage = () => {
-  const [skillsModalOpen, setSkillsModalOpen] = useState(false);
-  const [experienceModalOpen, setExperienceModalOpen] = useState(false);
-  const [educationModalOpen, setEducationModalOpen] = useState(false);
-
+  const [modalOpen, setModalOpen] = useState<ModalType>("");
   return (
     <PageLayout title="Resume">
       <div className="d-flex flex-column px-3">
         <Button
           variant="outline-secondary"
           className=" btn-outline-link mb-2 p-4"
-          onClick={() => setSkillsModalOpen(true)}
+          onClick={() => setModalOpen("Skills")}
         >
           <>
             <div className="display-4"> Skills </div>
             <i className="fas fa-shapes fa-3x"></i>
           </>
         </Button>
-        <ModalWrapper
-          show={skillsModalOpen}
-          onHide={() => setSkillsModalOpen(false)}
-          modalId="skills-modal"
-          title="Skills"
-        >
-          <SkillsModalBody />
-        </ModalWrapper>
+
         <Button
           variant="outline-secondary"
           className=" btn-outline-link mb-2 p-4"
-          onClick={() => setExperienceModalOpen(true)}
+          onClick={() => setModalOpen("Experience")}
         >
           <>
             <div className="display-4"> Experience </div>
             <i className="fas fa-user-graduate fa-3x"></i>
           </>
         </Button>
-        <ModalWrapper
-          show={experienceModalOpen}
-          onHide={() => setExperienceModalOpen(false)}
-          modalId="experience-modal"
-          title="Experience"
-        >
-          <ExperienceModalBody />
-        </ModalWrapper>
+
         <Button
           variant="outline-secondary"
           className="p-4"
-          onClick={() => setEducationModalOpen(true)}
+          onClick={() => setModalOpen("Education")}
         >
           <>
             <div className="display-4"> Education </div>
@@ -61,12 +45,18 @@ export const ResumePage = () => {
           </>
         </Button>
         <ModalWrapper
-          show={educationModalOpen}
-          onHide={() => setEducationModalOpen(false)}
-          modalId="educational-modal"
-          title="Education"
+          show={modalOpen ? true : false}
+          onHide={() => setModalOpen("")}
+          modalId="skill-modal"
+          title={modalOpen}
         >
-          <EducationModalBody />
+          {modalOpen === "Skills" ? (
+            <SkillsModalBody />
+          ) : modalOpen === "Experience" ? (
+            <ExperienceModalBody />
+          ) : modalOpen === "Education" ? (
+            <EducationModalBody />
+          ) : null}
         </ModalWrapper>
       </div>
     </PageLayout>
