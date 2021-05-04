@@ -59,7 +59,7 @@ export const ExperienceModalBody = () => {
                     <span className="display-6">{companyName}</span> |{" "}
                     <span className="display-8">{designation}</span>
                   </div>
-                  <p className="m-0">{location}</p>
+                  <p className="m-0 pl-2">{location}</p>
                 </div>
                 <span>{timePeriod}</span>
               </div>
