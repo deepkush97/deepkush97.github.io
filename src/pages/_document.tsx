@@ -1,8 +1,17 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from "next/document";
 
-type Props = {};
+export default class CustomDocument extends Document {
+  static async getInitialProps(context: DocumentContext) {
+    const initialProps = await Document.getInitialProps(context);
+    return { ...initialProps };
+  }
 
-export default class CustomDocument extends Document<Props> {
   render() {
     return (
       <Html>
