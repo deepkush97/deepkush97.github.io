@@ -2,7 +2,7 @@ import React from "react";
 import { PageLayout } from "../components/PageLayout";
 import { ProjectCard } from "../components/ProjectCard";
 
-export const ProjectsPage = () => {
+const Projects = () => {
   return (
     <PageLayout title="Projects">
       <div className="d-flex flex-wrap align-items-stretch  ">
@@ -41,3 +41,5 @@ export const ProjectsPage = () => {
     </PageLayout>
   );
 };
+
+export default Projects;
