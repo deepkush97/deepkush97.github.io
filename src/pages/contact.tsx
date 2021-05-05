@@ -3,7 +3,7 @@ import { Row } from "react-bootstrap";
 import { PageLayout } from "../components/PageLayout";
 import { SocialMediaCard } from "../components/SocialMediaCard";
 
-export const ContactPage = () => {
+const Contact = () => {
   return (
     <>
       <PageLayout title="Get in touch">
@@ -37,3 +37,4 @@ export const ContactPage = () => {
     </>
   );
 };
+export default Contact;

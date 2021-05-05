@@ -7,7 +7,7 @@ import { SkillsModalBody } from "../components/SkillsModalBody";
 import { ModalWrapper } from "../components/ModalWrapper";
 
 type ModalType = "Education" | "Experience" | "Skills" | "";
-export const ResumePage = () => {
+const Resume = () => {
   const [modalOpen, setModalOpen] = useState<ModalType>("");
   return (
     <PageLayout title="Resume">
@@ -62,3 +62,4 @@ export const ResumePage = () => {
     </PageLayout>
   );
 };
+export default Resume;
