@@ -1,5 +1,5 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import Link from "next/link";
 export const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="mx-1 mt-1">
@@ -17,21 +17,21 @@ export const NavBar = () => {
       <Navbar.Toggle aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
         <Nav className="ml-auto mr-5">
-          <LinkContainer to="/">
-            <Nav.Link>Home</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/projects">
-            <Nav.Link>Projects</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/resume">
-            <Nav.Link>Resume</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/about">
-            <Nav.Link>About</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/contact">
-            <Nav.Link>Contact</Nav.Link>
-          </LinkContainer>
+          <Link href="/">
+            <a className="nav-link">Home</a>
+          </Link>
+          <Link href="/projects">
+            <a className="nav-link">Projects</a>
+          </Link>
+          <Link href="/resume">
+            <a className="nav-link">Resume</a>
+          </Link>
+          <Link href="/about">
+            <a className="nav-link">About</a>
+          </Link>
+          <Link href="/contact">
+            <a className="nav-link">Contact</a>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

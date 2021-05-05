@@ -1,6 +1,6 @@
 import React from "react";
 import { PageLayout } from "../components/PageLayout";
-export const AboutPage = () => {
+const About = () => {
   return (
     <>
       <PageLayout title="About">
@@ -50,9 +50,9 @@ export const AboutPage = () => {
             about, more than programming, in simple terms. Then, I get into the
             industry and it's all pretty great, I could say like that.
           </p>
-          <p></p>
         </div>
       </PageLayout>
     </>
   );
 };
+export default About;
