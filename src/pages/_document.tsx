@@ -14,7 +14,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
           <link rel="icon" href="./favicon.ico" />
