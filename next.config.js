@@ -1,5 +1,5 @@
 module.exports = {
-  assetPrefix: "/deepkush97.github.io",
+  assetPrefix: "",
   basePath: "",
   future: {
     webpack5: true,
