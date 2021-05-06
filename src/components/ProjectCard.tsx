@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Card } from "react-bootstrap";
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   url: string;
   title: string;
   description: string;
