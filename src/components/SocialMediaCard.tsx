@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { Card, Col } from "react-bootstrap";
-
-interface SocialMediaCardProps {
+export interface SocialMediaCardProps {
   url: string;
   iconClass: string;
   description: string;
