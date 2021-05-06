@@ -1,5 +1,8 @@
 :root {
   --primary: #209cee;
+  --primary-hover: #67bcf3;
+  --primary-dark: #0e72b4;
+  --primary-lightest: #aedbf9;
   --dark: #333;
   --white: #fff;
 }
@@ -70,7 +73,6 @@ main {
 .tech-stack .stack-text {
   position: relative;
   display: inline-block;
-  background: var(--white);
   padding: 0.2em 1em;
   max-width: 80%;
 }
