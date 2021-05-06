@@ -1,10 +1,36 @@
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import { PageLayout } from "../components/PageLayout";
-import { EducationModalBody } from "../components/EducationModalBody";
-import { ExperienceModalBody } from "../components/ExperienceModalBody";
-import { SkillsModalBody } from "../components/SkillsModalBody";
-import { ModalWrapper } from "../components/ModalWrapper";
+import { ModalWrapperProps } from "../components/ModalWrapper";
+import { PageLayoutProps } from "../components/PageLayout";
+
+const PageLayout = dynamic<PageLayoutProps>(
+  import("../components/PageLayout").then((component) => component.PageLayout)
+);
+
+const EducationModalBody = dynamic<{}>(
+  import("../components/EducationModalBody").then(
+    (component) => component.EducationModalBody
+  )
+);
+
+const SkillsModalBody = dynamic<{}>(
+  import("../components/SkillsModalBody").then(
+    (component) => component.SkillsModalBody
+  )
+);
+
+const ExperienceModalBody = dynamic<{}>(
+  import("../components/ExperienceModalBody").then(
+    (component) => component.ExperienceModalBody
+  )
+);
+
+const ModalWrapper = dynamic<ModalWrapperProps>(
+  import("../components/ModalWrapper").then(
+    (component) => component.ModalWrapper
+  )
+);
 
 type ModalType = "Education" | "Experience" | "Skills" | "";
 const Resume = () => {
