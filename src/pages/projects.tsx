@@ -1,6 +1,15 @@
+import dynamic from "next/dynamic";
 import React from "react";
-import { PageLayout } from "../components/PageLayout";
-import { ProjectCard } from "../components/ProjectCard";
+import { PageLayoutProps } from "../components/PageLayout";
+
+const PageLayout = dynamic<PageLayoutProps>(
+  import("../components/PageLayout").then((component) => component.PageLayout)
+);
+
+import { ProjectCardProps } from "../components/ProjectCard";
+const ProjectCard = dynamic<ProjectCardProps>(
+  import("../components/ProjectCard").then((component) => component.ProjectCard)
+);
 
 const Projects = () => {
   return (
