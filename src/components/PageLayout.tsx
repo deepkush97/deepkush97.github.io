@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { SEO } from "./SEO";
 
-export interface PageLayoutProps {
+interface PageLayoutProps {
   title: string;
 }
 
