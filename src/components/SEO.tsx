@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { FC } from "react-transition-group/node_modules/@types/react";
 
-export interface SEOProps {
+interface SEOProps {
   description: string;
   title: string;
   siteTitle: string;

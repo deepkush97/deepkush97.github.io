@@ -1,17 +1,8 @@
-import dynamic from "next/dynamic";
 import React from "react";
 import { Row } from "react-bootstrap";
-import { PageLayoutProps } from "../components/PageLayout";
-import { SocialMediaCardProps } from "../components/SocialMediaCard";
+import { PageLayout } from "../components/PageLayout";
+import { SocialMediaCard } from "../components/SocialMediaCard";
 
-const PageLayout = dynamic<PageLayoutProps>(
-  import("../components/PageLayout").then((component) => component.PageLayout)
-);
-const SocialMediaCard = dynamic<SocialMediaCardProps>(
-  import("../components/SocialMediaCard").then(
-    (component) => component.SocialMediaCard
-  )
-);
 const Contact = () => {
   return (
     <>

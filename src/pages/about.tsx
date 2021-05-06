@@ -1,9 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-import { PageLayoutProps } from "../components/PageLayout";
-const PageLayout = dynamic<PageLayoutProps>(
-  import("../components/PageLayout").then((component) => component.PageLayout)
-);
+import { PageLayout } from "../components/PageLayout";
 const About = () => {
   return (
     <>

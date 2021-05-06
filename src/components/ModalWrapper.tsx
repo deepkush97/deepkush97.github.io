@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-export interface ModalWrapperProps {
+interface ModalWrapperProps {
   show: boolean;
   onHide: () => void;
   modalId: string;
