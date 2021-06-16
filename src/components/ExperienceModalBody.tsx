@@ -2,11 +2,19 @@ import { Card, Accordion } from "react-bootstrap";
 
 const experienceArray = [
   {
+    key: "fourth",
+    companyName: "Intellect Design Arena Limited",
+    location: "Delhi, India",
+    designation: "Associate Consultant",
+    timePeriod: "Jun' 2021 - Present",
+    mentionablePoints: ["Working mainly on NodeJS, MySQL."],
+  },
+  {
     key: "third",
     companyName: "AtliQ Technologies",
     location: "Vadodara, Gujarat",
     designation: "Software Engineer",
-    timePeriod: "Nov' 2020 - Present",
+    timePeriod: "Nov' 2020 - Jun' 2021",
     mentionablePoints: [
       "Building software and application according to the needs of the client.",
       "Worked mainly on NodeJS, React and Laravel.",
@@ -41,7 +49,7 @@ const experienceArray = [
 
 export const ExperienceModalBody = () => {
   return (
-    <Accordion defaultActiveKey="third">
+    <Accordion defaultActiveKey={experienceArray[0].key}>
       {experienceArray.map(
         ({
           companyName,
