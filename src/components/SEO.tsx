@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { FC } from "react-transition-group/node_modules/@types/react";
+import { FC } from "react";
 
 interface SEOProps {
   description: string;
@@ -27,7 +27,6 @@ export const SEO: FC<SEOProps> = ({
       <meta property="og:url" content={siteUrl} />
       <meta property="og:site_name" content={siteTitle} />
       <meta property="og:image" content={image} />
-
       <meta property="twitter:card" content="summary" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />

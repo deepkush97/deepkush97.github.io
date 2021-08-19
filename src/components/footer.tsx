@@ -1,14 +1,13 @@
-import { useRouter } from "next/router";
 import React, { FC } from "react";
 import { classes } from "../configs/classnames";
-import { github_link, site_name } from "../configs/strings";
+import { github_link, title } from "../configs/data";
 
-export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
-  const router = useRouter();
-
+export const Footer: FC = () => {
   return (
     <>
-      <footer className={`sticky bg-transparent bottom-0 block py-2`}>
+      <footer
+        className={`sticky ${classes.background.base} bottom-0 block py-2`}
+      >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4">
@@ -16,12 +15,11 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
                 className={`text-sm text- font-semibold py-1 text-center md:text-left`}
               >
                 Copyright © {new Date().getFullYear()}
-                <a
-                  href="#"
-                  className={`${classes.textBase} ${classes.textHover} text-sm font-semibold p-1`}
+                <span
+                  className={`${classes.textBase} text-sm font-semibold p-1`}
                 >
-                  {site_name}
-                </a>
+                  {title}
+                </span>
               </div>
             </div>
             <div className="w-full md:w-8/12 px-4 mt-2 md:mt-0">
@@ -31,15 +29,6 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
                     onClick={() => window.open(github_link, "_blank")}
                   >
                     Github
-                  </FooterLink>
-                </li>
-                <li>
-                  <FooterLink
-                    onClick={() =>
-                      router.push(isAuthLayout ? "/about" : "/app/about")
-                    }
-                  >
-                    About
                   </FooterLink>
                 </li>
               </ul>
