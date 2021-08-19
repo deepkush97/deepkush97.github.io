@@ -5,7 +5,7 @@ import { socials } from "../../configs/data";
 export const ContactSection = () => {
   return (
     <InfoSection id="contact">
-      <div className="flex h-full flex-row mt-8">
+      <div className="flex h-full flex-row flex-wrap md:flex-nowrap space-y-4 md:space-y-0 mt-8">
         {socials.map((social, index) => (
           <SocialMediaCard
             key={index}

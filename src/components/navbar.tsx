@@ -7,10 +7,10 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between  py-8 navbar-expand-lg`}
+        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between py-4 md:py-8  navbar-expand-lg`}
       >
         <div className="container px-6 mx-auto flex  flex-wrap items-center justify-between">
-          <div className="w-full relative flex flex-row justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className="w-full flex justify-center md:w-auto md:static md:block md:justify-start">
             <Link href="/">
               <a
                 className={`${classes.textBase} text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase`}
@@ -19,7 +19,7 @@ export const Navbar = () => {
               </a>
             </Link>
           </div>
-          <div className="flex">
+          <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start">
             {Object.values(navigation).map((nav) => (
               <NavItem
                 key={nav.id}
