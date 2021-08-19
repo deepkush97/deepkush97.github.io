@@ -1,5 +1,5 @@
 {
-  "name": "Deepanshu Kushwaha Portfolio",
+  "name": "DeepKush",
   "short_name": "deepkush97",
   "icons": [
     {
@@ -13,7 +13,9 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "theme_color": "#64ffda",
+  "background_color": "#112240",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "scope": "/"
 }

@@ -1,23 +1,22 @@
 import { AppProps } from "next/app";
-import Head from "next/head";
-import { NavBar } from "../components/NavBar";
-import { SideBar } from "../components/SideBar";
-import "../styles/sketchy.bootstrap.min.css";
+import { MainLayout } from "../layouts/main";
 import "../styles/style.css";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { SEO } from "../components/SEO";
+import { site_name, applicationDescription } from "../configs/data";
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <NavBar />
-      <div className="d-flex">
-        <SideBar />
-        <main className="container p-3 ">
-          <Component {...pageProps} />
-        </main>
-      </div>
+      <SEO
+        title="DeepKush"
+        siteTitle={site_name}
+        description={applicationDescription}
+        image="./logo.png"
+        siteUrl="https://deepkush97.github.io/"
+      />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
     </>
   );
 }
