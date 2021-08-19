@@ -45,7 +45,7 @@ export const NavItem: FC<NavItemProps> = ({ id, number, title }) => {
   return (
     <Link href={`/#${id}`}>
       <a
-        className={`${classes.textBase} text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap`}
+        className={`${classes.textBase} ${classes.textHover} text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap`}
       >
         <span className={`${classes.textAccent} font-mono`}>{number}.</span>{" "}
         {title}

@@ -112,7 +112,12 @@ export const experiences = {
     location: "Delhi, India",
     designation: "Associate Consultant",
     timePeriod: "Jun' 2021 - Present",
-    mentionablePoints: ["Working mainly on NodeJS, MySQL."],
+    mentionablePoints: [
+      "Developing and maintaining ETL for Data Warehouse.",
+      "Optimizing and maintain existing architecture.",
+      "Price trends generation and development for analytics.",
+      "Working on NodeJS, Python and Java.",
+    ],
   },
   third: {
     companyName: "AtliQ Technologies",
@@ -179,33 +184,64 @@ export const socials = [
 export const projects = [
   {
     description:
-      "A npm runner which creates application boilerplate with typescript in a better project structure which includes swagger-ui documentation and some security aspects.",
-    title: "create-better-express-api",
-    techStack: ["JS"],
-    url: "https://github.com/deepkush97/create-better-express-api",
+      "A note application which reside into your private browser and persist it in IndexedDB.",
+    title: "inmemory-notes-app-ts",
+    techStack: ["Typescript", "React", "MaterialUI", "ReactRouter", "Dexie.js"],
+    url: "https://deepkush97.github.io/inmemory-notes-app-ts/",
+    repoLink: "https://github.com/deepkush97/inmemory-notes-app-ts",
   },
   {
     description:
       " A job portal project in which user can apply for the listed jobs and recruiter can create jobs and view the applied candidates list for the job.",
     title: "job-portal-js",
     techStack: [
-      "JS",
+      "Javascript",
       "Express",
       "MySQL",
       "Sequelize",
       "ReactJS",
-      "ContextAPI",
       "Bootstrap",
       "ReactRouter",
     ],
-    url: "https://github.com/deepkush97/job-portal-js",
+    repoLink: "https://github.com/deepkush97/job-portal-js",
+  },
+  {
+    description:
+      "A npm runner which creates application boilerplate with typescript in a better project structure which includes swagger-ui documentation and some security aspects.",
+    title: "create-better-express-api",
+    techStack: ["Javascript"],
+    url: "https://www.npmjs.com/package/create-better-express-api",
+    repoLink: "https://github.com/deepkush97/create-better-express-api",
+  },
+  {
+    description:
+      "A simple logger implementation with typescript containing two transport method for logging.",
+    title: "logger-ts",
+    techStack: ["Typescript"],
+    url: "https://www.npmjs.com/package/@deepkush97/logger-ts",
+    repoLink: "https://github.com/deepkush97/logger-ts",
+  },
+  {
+    description:
+      "A small runner to generate npm install script for given project.",
+    title: "npm-i-copier",
+    techStack: ["Javascript"],
+    url: "https://www.npmjs.com/package/npm-i-copier",
+    repoLink: "https://github.com/deepkush97/npm-i-copier",
+  },
+  {
+    description:
+      "Stream any RTSP stream and output to websocket for consumption by jsmpeg.",
+    title: "node-rtsp-stream-ts",
+    techStack: ["Typescript", "RTSP", "Websocket"],
+    repoLink: "https://github.com/deepkush97/node-rtsp-stream-ts",
   },
   {
     description:
       "A reddit clone using a server at backend with node, express, typeorm and postgres. The client is made with React with tailwind and SWR.",
     title: "read-it-ts",
     techStack: [
-      "TS",
+      "Typescript",
       "Node",
       "TypeORM",
       "PostgreSQL",
@@ -213,13 +249,20 @@ export const projects = [
       "Tailwind",
       "SWR",
     ],
-    url: "https://github.com/deepkush97/read-it-ts",
+    repoLink: "https://github.com/deepkush97/read-it-ts",
   },
   {
     description:
       "A e-commerce application built with Express, MongoDB, React, React-Router, Redux, Redux-Thunk, Bootstrap.",
     title: "pro-shop-js",
-    techStack: ["JS", "Express", "ReactJS", "Redux", "MongoDB", "Bootstrap"],
-    url: "https://github.com/deepkush97/pro-shop-js",
+    techStack: [
+      "Javascript",
+      "Express",
+      "ReactJS",
+      "Redux",
+      "MongoDB",
+      "Bootstrap",
+    ],
+    repoLink: "https://github.com/deepkush97/pro-shop-js",
   },
 ];
