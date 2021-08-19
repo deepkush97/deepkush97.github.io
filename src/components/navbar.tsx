@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import React, { FC } from "react";
 import { classes } from "../configs/classnames";
 import { title, navigation } from "../configs/data";
