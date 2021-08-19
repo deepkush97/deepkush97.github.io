@@ -1,5 +1,8 @@
+import Link from "next/link";
 import React from "react";
 import { classes } from "../../configs/classnames";
+import { navigation } from "../../configs/data";
+const contactSectionInfo = navigation["contact"];
 export const HeroSection = () => {
   return (
     <section id="home" className="min-h-80v pb-24">
@@ -14,11 +17,13 @@ export const HeroSection = () => {
           and .NET Core, ASP.NET Core and many more things.{" "}
         </p>
       </div>
-      <button
-        className={`bg-transparent hover:bg-aquamarine-800 hover:bg-opacity-20 ${classes.textAccent}  font-normal font-mono my-4 py-4 px-6 border border-aquamarine-600 rounded`}
-      >
-        Get in Touch
-      </button>
+      <Link href={`/#${contactSectionInfo.id}`}>
+        <a
+          className={`bg-transparent hover:bg-aquamarine-800 hover:bg-opacity-20 ${classes.textAccent} block w-44 font-normal font-mono my-4 py-4 px-6 border border-aquamarine-600 rounded`}
+        >
+          Get in Touch
+        </a>
+      </Link>
     </section>
   );
 };
