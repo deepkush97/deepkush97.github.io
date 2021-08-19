@@ -19,7 +19,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`rounded shadow-xl mx-6 my-3 p-4 w-1/3 flex flex-col h-60 ${classes.background.dark} hover:transform hover:scale-105 duration-200`}
+      className={`rounded shadow-xl mx-6 my-3 p-4 w-full md:w-1/3 flex flex-col h-60 ${classes.background.dark} hover:transform hover:scale-105 duration-200`}
     >
       <div className="flex mb-4">
         <span className={`flex-1 text-lg ${classes.textWhite}`}>{title}</span>

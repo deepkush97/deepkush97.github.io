@@ -10,7 +10,7 @@ export const MainLayout: FC = ({ children }) => {
     >
       <Navbar />
       <div className="min-h-full w-full mx-auto px-6 sm:px-44">{children}</div>
-      <Footer isAuthLayout={true} />
+      <Footer />
     </main>
   );
 };

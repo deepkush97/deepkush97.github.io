@@ -9,7 +9,7 @@ interface SkillItemProps {
 
 export const SkillItem: FC<SkillItemProps> = ({ items, title }) => {
   return (
-    <div className="px-10">
+    <div className="px-6 md:px-10">
       <h4 className={`mb-2 text-lg ${classes.textWhite}`}>{title}</h4>
       <ul className="flex w-full flex-wrap">
         {items.map((item, index) => (
@@ -34,7 +34,7 @@ export const SkillListItem: FC<SkillListItemProps> = ({
   additionalText,
 }) => {
   return (
-    <li className="w-1/2">
+    <li className="w-full md:w-1/2 mb-2 md:mb-0">
       <span className={classes.textAccent}>-</span> {text}{" "}
       {additionalText ? `(${additionalText})` : ""}
     </li>
