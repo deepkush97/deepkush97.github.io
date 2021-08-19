@@ -6,7 +6,7 @@ import { experiences } from "../../configs/data";
 type ExperienceKeys = keyof typeof experiences;
 
 export const ExperienceSection = () => {
-  const [openTab, setOpenTab] = React.useState<ExperienceKeys>("first");
+  const [openTab, setOpenTab] = React.useState<ExperienceKeys>("fourth");
   const selected = experiences[openTab];
   return (
     <InfoSection id="experience">
