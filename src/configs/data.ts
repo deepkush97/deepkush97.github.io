@@ -1,7 +1,8 @@
 export const site_name = "deepkush97";
 export const github_link = "https://github.com/deepkush97";
 export const title = "DeepKush";
-export const applicationDescription = "My portfolio website";
+export const applicationDescription =
+  "Deepanshu Kushwaha is a Software Engineer who has experience in NodeJS, React and .NET Core, ASP.NET Core and many more things.";
 export const locale = "en";
 
 export const navigation = {
