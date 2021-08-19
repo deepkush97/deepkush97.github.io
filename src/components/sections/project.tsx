@@ -15,6 +15,7 @@ export const ProjectSection = () => {
               title={project.title}
               techStack={project.techStack}
               url={project.url}
+              repoLink={project.repoLink}
             />
           ))}
         </div>

@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import React, { FC } from "react";
 import { classes } from "../../configs/classnames";
 import { InfoSection } from "../InfoSection";
 import { experiences } from "../../configs/data";
@@ -22,7 +22,9 @@ export const ExperienceSection = () => {
           ))}
         </div>
         <div className="w-full">
-          <div className="relative flex flex-col min-w-0 break-words bg-aquamarine-800 bg-opacity-20 border border-aquamarine-600 w-full mb-6 shadow-lg">
+          <div
+            className={`relative flex flex-col min-w-0 break-words ${classes.background.transparentAccent} border ${classes.border} w-full mb-6 shadow-lg`}
+          >
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <TabContent item={selected} />
@@ -44,8 +46,12 @@ interface TabButtonProps {
 export const TabButton: FC<TabButtonProps> = ({ isActive, title, onClick }) => {
   return (
     <button
-      className={`bg-transparent hover:bg-aquamarine-800 hover:bg-opacity-20 text-aquamarine-500  text-sm font-mono py-2 px-4 border border-aquamarine-600 ${
-        isActive && " bg-aquamarine-800 bg-opacity-20"
+      className={`${classes.background.hoverTransparentAccent} ${
+        classes.textAccent
+      }  text-sm font-mono py-2 px-4 border ${classes.border} ${
+        isActive
+          ? ` ${classes.background.transparentAccent}`
+          : " bg-transparent "
       }`}
       onClick={onClick}
     >
@@ -69,7 +75,9 @@ export const TabContent: FC<TabContentProps> = ({
 }) => {
   return (
     <>
-      <div className="flex items-center justify-between border-b-2 border-aquamarine-500 pb-2 mb-4">
+      <div
+        className={`flex items-center justify-between border-b-2 ${classes.border} pb-2 mb-4`}
+      >
         <div className="flex flex-col">
           <div className={classes.textWhite}>
             <span className={`text-base`}>{companyName}</span> |{" "}
@@ -81,7 +89,7 @@ export const TabContent: FC<TabContentProps> = ({
       </div>
       <ul className="flex w-full flex-col">
         {mentionablePoints.map((point, pointIndex) => (
-          <li key={pointIndex}>
+          <li key={pointIndex} className="mb-1">
             <span className={classes.textAccent}>-</span> {point}
           </li>
         ))}

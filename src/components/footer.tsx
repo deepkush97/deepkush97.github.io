@@ -14,12 +14,7 @@ export const Footer: FC = () => {
               <div
                 className={`text-sm text- font-semibold py-1 text-center md:text-left`}
               >
-                Copyright © {new Date().getFullYear()}
-                <span
-                  className={`${classes.textBase} text-sm font-semibold p-1`}
-                >
-                  {title}
-                </span>
+                Created By {title}
               </div>
             </div>
             <div className="w-full md:w-8/12 px-4 mt-2 md:mt-0">
