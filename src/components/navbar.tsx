@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React, { FC } from "react";
 import { classes } from "../configs/classnames";
 import { title, navigation } from "../configs/data";
@@ -9,13 +10,14 @@ export const Navbar = () => {
       <nav
         className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between py-4 md:py-8  navbar-expand-lg`}
       >
-        <div className="container px-6 mx-auto flex  flex-wrap items-center justify-between">
+        <div className="container px-6 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full flex justify-center md:w-auto md:static md:block md:justify-start">
             <Link href="/">
               <a
-                className={`${classes.textBase} text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase`}
+                className={`${classes.textBase} flex items-center justify-center text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase`}
               >
-                {title}
+                <span className={`${classes.textAccent} text-base`}>DK </span>
+                <span className="ml-2">{title}</span>
               </a>
             </Link>
           </div>
