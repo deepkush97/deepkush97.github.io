@@ -76,14 +76,16 @@ export const TabContent: FC<TabContentProps> = ({
       <div
         className={`flex items-center justify-between border-b-2 ${classes.border} pb-2 mb-4`}
       >
-        <div className="flex flex-col">
-          <div className={classes.textWhite}>
-            <span className={`text-base`}>{companyName}</span> |{" "}
-            <span className="text-base">{designation}</span>
+        <div className="flex flex-col w-full justify-between md:flex-row">
+          <div className={`flex flex-col text-base ${classes.textWhite}`}>
+            <span>{designation}</span>
+            <span>{companyName}</span>
           </div>
-          <p className="text-sm">{location}</p>
+          <div className={`flex text-sm flex-col justify-center`}>
+            <span>{location}</span>
+            <span>{timePeriod}</span>
+          </div>
         </div>
-        <span className="text-sm">{timePeriod}</span>
       </div>
       <ul className="flex w-full flex-col">
         {mentionablePoints.map((point, pointIndex) => (
