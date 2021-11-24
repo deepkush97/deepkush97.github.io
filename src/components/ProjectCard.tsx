@@ -48,16 +48,14 @@ export const ProjectCard: FC<ProjectCardProps> = ({
           )}
         </div>
       </div>
-      {/* <Link href={url}>
-        <a target="_blank" rel="noreferrer">
-        </a>
-      </Link> */}
-
       <p className="text-sm flex-1">{description}</p>
 
       <p className="flex flex-wrap text-xs">
         {techStack.map((stack, index) => (
-          <span className="mx-2 mb-2" key={index}>
+          <span
+            className={`bg-transparent ${classes.background.hoverTransparentAccent} ${classes.textAccent} inline-block font-normal cursor-default font-mono mr-1 mb-1 px-1 border ${classes.border}`}
+            key={index}
+          >
             {stack}
           </span>
         ))}
