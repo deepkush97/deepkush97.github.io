@@ -3,13 +3,13 @@ import { MainLayout } from "../layouts/main";
 import "../styles/style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { SEO } from "../components/SEO";
-import { site_name, applicationDescription } from "../configs/data";
+import { siteName, applicationDescription } from "../configs/data";
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <SEO
         title="DeepKush"
-        siteTitle={site_name}
+        siteTitle={siteName}
         description={applicationDescription}
         image="./logo.png"
         siteUrl="https://deepkush97.github.io/"
