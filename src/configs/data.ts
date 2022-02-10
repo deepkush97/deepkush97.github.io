@@ -1,5 +1,5 @@
-export const site_name = "deepkush97";
-export const github_link = "https://github.com/deepkush97";
+export const siteName = "deepkush97";
+export const githubLink = "https://github.com/deepkush97";
 export const title = "DeepKush";
 export const applicationDescription =
   "Deepanshu Kushwaha is a Software Engineer who has experience in NodeJS, React and .NET Core, ASP.NET Core and many more things.";
@@ -57,12 +57,16 @@ export const skills = [
   {
     title: "Frontend Development",
     items: [
-      {
-        text: "React",
-      },
-      {
-        text: "JQuery",
-      },
+      { text: "Next.js" },
+      { text: "React" },
+      { text: "Redux" },
+      { text: "Flutter" },
+      { text: "Svelte" },
+      { text: "TailwindCSS" },
+      { text: "Bootstrap" },
+      { text: "JQuery" },
+      { text: "HTML" },
+      { text: "CSS" },
     ],
   },
   {
@@ -83,7 +87,7 @@ export const skills = [
         text: "MySQL",
       },
       {
-        text: "SQL Server (MSSQL)",
+        text: "MSSQL",
       },
       {
         text: "PostreSQL",
@@ -115,9 +119,9 @@ export const experiences = {
     timePeriod: "Jun' 2021 - Present",
     mentionablePoints: [
       "Developing and maintaining ETL for Data Warehouse.",
-      "Optimizing and maintain existing architecture.",
       "Price trends generation and development for analytics.",
-      "Working on NodeJS, Python and Java.",
+      "Development in Government e-Marketplace Application.",
+      "Working on NodeJS, Python, Java, and JavaScript.",
     ],
   },
   third: {

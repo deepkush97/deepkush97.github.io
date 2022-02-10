@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { classes } from "../configs/classnames";
-import { github_link, title } from "../configs/data";
+import { githubLink, title } from "../configs/data";
 
 export const Footer: FC = () => {
   return (
@@ -20,9 +20,7 @@ export const Footer: FC = () => {
             <div className="w-full md:w-8/12 px-4 mt-2 md:mt-0">
               <ul className="flex flex-wrap list-none md:justify-end justify-center">
                 <li>
-                  <FooterLink
-                    onClick={() => window.open(github_link, "_blank")}
-                  >
+                  <FooterLink onClick={() => window.open(githubLink, "_blank")}>
                     Github
                   </FooterLink>
                 </li>
