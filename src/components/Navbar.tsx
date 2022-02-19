@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between py-4 md:py-8  navbar-expand-lg`}
+        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between pb-4 md:py-8  navbar-expand-lg`}
       >
         <div className="container px-6 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full flex justify-center md:w-auto md:static md:block md:justify-start">
