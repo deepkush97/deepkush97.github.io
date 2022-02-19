@@ -8,9 +8,7 @@ const withOpacity =
       : `rgb(${rgbValue})`;
 
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
       xs: "0.75rem",
@@ -91,13 +89,6 @@ module.exports = {
         "70v": "70vh",
         "60v": "60vh",
       },
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ["checked"],
-      borderColor: ["checked"],
-      inset: ["checked"],
     },
   },
   plugins: [],
