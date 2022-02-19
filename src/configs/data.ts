@@ -1,3 +1,33 @@
+import { AspNetCoreLogo } from "../components/logos/backend/AspNetCoreLogo";
+import { NodejsLogo } from "../components/logos/backend/NodejsLogo";
+import { MongoDbLogo } from "../components/logos/database/MongoDbLogo";
+import { MsSqlLogo } from "../components/logos/database/MsSqlLogo";
+import { MySqlLogo } from "../components/logos/database/MySqlLogo";
+import { PostgreSqlLogo } from "../components/logos/database/PostgreSqlLogo";
+import { BootstrapLogo } from "../components/logos/frontend/BootstrapLogo";
+import { FlutterLogo } from "../components/logos/frontend/FlutterLogo";
+import { JqueryLogo } from "../components/logos/frontend/JqueryLogo";
+import { NextJsLogo } from "../components/logos/frontend/NextJsLogo";
+import { ReactJsLogo } from "../components/logos/frontend/ReactJsLogo";
+import { ReduxLogo } from "../components/logos/frontend/ReduxLogo";
+import { SvelteLogo } from "../components/logos/frontend/SvelteLogo";
+import { TailwindCssLogo } from "../components/logos/frontend/TailwindCssLogo";
+import { CppLogo } from "../components/logos/languages/CppLogo";
+import { CSharpLogo } from "../components/logos/languages/CSharpLogo";
+import { Css3Logo } from "../components/logos/languages/Css3Logo";
+import { Html5Logo } from "../components/logos/languages/Html5Logo";
+import { JavaLogo } from "../components/logos/languages/JavaLogo";
+import { JavaScriptLogo } from "../components/logos/languages/JavaScriptLogo";
+import { PythonLogo } from "../components/logos/languages/PythonLogo";
+import { TypeScriptLogo } from "../components/logos/languages/TypeScriptLogo";
+import { AndroidStudioLogo } from "../components/logos/tools/AndroidStudioLogo";
+import { GitHubLogo } from "../components/logos/tools/GitHubLogo";
+import { GitLabLogo } from "../components/logos/tools/GitLabLogo";
+import { GitLogo } from "../components/logos/tools/GitLogo";
+import { VisualStudioLogo } from "../components/logos/tools/VisualStudioLogo";
+import { VscodeLogo } from "../components/logos/tools/VscodeLogo";
+import { TechToken } from "../components/TechToken";
+
 export const siteName = "deepkush97";
 export const githubLink = "https://github.com/deepkush97";
 export const title = "DeepKush";
@@ -18,28 +48,36 @@ export const skills = [
     title: "Languages",
     items: [
       {
-        text: "Typescript/Javascript",
-        additionalText: "Proficient",
+        title: "Typescript (Proficient)",
+        iconComponent: TypeScriptLogo,
       },
       {
-        text: "C#",
-        additionalText: "Proficient",
+        title: "Javascript (Proficient)",
+        iconComponent: JavaScriptLogo,
       },
       {
-        text: "HTML/CSS",
-        additionalText: "Proficient",
+        title: "C# (Proficient)",
+        iconComponent: CSharpLogo,
       },
       {
-        text: "Python",
-        additionalText: "Limited",
+        title: "HTML (Proficient)",
+        iconComponent: Html5Logo,
       },
       {
-        text: "Java",
-        additionalText: "Limited",
+        title: "CSS (Proficient)",
+        iconComponent: Css3Logo,
       },
       {
-        text: "C/C++",
-        additionalText: "Limited",
+        title: "Python (Limited)",
+        iconComponent: PythonLogo,
+      },
+      {
+        title: "Java (Limited)",
+        iconComponent: JavaLogo,
+      },
+      {
+        title: "C/C++ (Limited)",
+        iconComponent: CppLogo,
       },
     ],
   },
@@ -47,53 +85,78 @@ export const skills = [
     title: "Backend Development",
     items: [
       {
-        text: "NodeJS",
+        title: "Node.js",
+        iconComponent: NodejsLogo,
       },
       {
-        text: "ASP.NET Core",
+        title: "ASP.NET Core",
+        iconComponent: AspNetCoreLogo,
       },
     ],
   },
   {
     title: "Frontend Development",
     items: [
-      { text: "Next.js" },
-      { text: "React" },
-      { text: "Redux" },
-      { text: "Flutter" },
-      { text: "Svelte" },
-      { text: "TailwindCSS" },
-      { text: "Bootstrap" },
-      { text: "JQuery" },
-      { text: "HTML" },
-      { text: "CSS" },
-    ],
-  },
-  {
-    title: "Software Development",
-    items: [
-      {
-        text: "WinForms/WPF",
-      },
-      {
-        text: "Core Libraries",
-      },
+      { title: "Next.js", iconComponent: NextJsLogo },
+      { title: "React.js", iconComponent: ReactJsLogo },
+      { title: "Redux", iconComponent: ReduxLogo },
+      { title: "Flutter", iconComponent: FlutterLogo },
+      { title: "Svelte", iconComponent: SvelteLogo },
+      { title: "Tailwind CSS", iconComponent: TailwindCssLogo },
+      { title: "Bootstrap", iconComponent: BootstrapLogo },
+      { title: "JQuery", iconComponent: JqueryLogo },
+      { title: "HTML", iconComponent: Html5Logo },
+      { title: "CSS", iconComponent: Css3Logo },
     ],
   },
   {
     title: "Databases",
     items: [
       {
-        text: "MySQL",
+        title: "MySQL",
+        iconComponent: MySqlLogo,
       },
       {
-        text: "MSSQL",
+        title: "MSSQL",
+        iconComponent: MsSqlLogo,
       },
       {
-        text: "PostreSQL",
+        title: "PostreSQL",
+        iconComponent: PostgreSqlLogo,
       },
       {
-        text: "MongoDB",
+        title: "MongoDB",
+        iconComponent: MongoDbLogo,
+      },
+    ],
+  },
+  {
+    title: "Tools",
+    items: [
+      {
+        title: "Visual Studio Code",
+        iconComponent: VscodeLogo,
+      },
+      {
+        title: "Git",
+        iconComponent: GitLogo,
+      },
+      {
+        title: "Android Studio",
+        iconComponent: AndroidStudioLogo,
+      },
+      {
+        title: "Visual Studio",
+        iconComponent: VisualStudioLogo,
+      },
+
+      {
+        title: "Github",
+        iconComponent: GitHubLogo,
+      },
+      {
+        title: "Gitlab",
+        iconComponent: GitLabLogo,
       },
     ],
   },
