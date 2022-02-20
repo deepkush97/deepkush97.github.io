@@ -3,21 +3,19 @@ import { classes } from "../../configs/classnames";
 import { InfoSection } from "../InfoSection";
 import { experiences } from "../../configs/data";
 
-type ExperienceKeys = keyof typeof experiences;
-
 export const ExperienceSection = () => {
-  const [openTab, setOpenTab] = React.useState<ExperienceKeys>("fourth");
+  const [openTab, setOpenTab] = React.useState<number>(0);
   const selected = experiences[openTab];
   return (
     <InfoSection id="experience">
       <div className="flex h-full flex-col md:flex-row mt-8 px-6 md:px-32 pt-8">
         <div className="flex flex-row md:flex-col justify-start md:h-96 overflow-auto">
-          {Object.entries(experiences).map(([key, value]) => (
+          {experiences.map((value, index) => (
             <TabButton
-              isActive={openTab === key}
-              onClick={() => setOpenTab(key as ExperienceKeys)}
+              isActive={openTab === index}
+              onClick={() => setOpenTab(index)}
               title={value.timePeriod}
-              key={key}
+              key={index}
             />
           ))}
         </div>
@@ -78,8 +76,8 @@ export const TabContent: FC<TabContentProps> = ({
       >
         <div className="flex flex-col w-full justify-between md:flex-row">
           <div className={`flex flex-col text-base ${classes.textWhite}`}>
-            <span>{designation}</span>
-            <span>{companyName}</span>
+            <span className={classes.textAccent}>{designation}</span>
+            <span className="text-sm">{companyName}</span>
           </div>
           <div className={`flex text-sm flex-col justify-center`}>
             <span>{location}</span>

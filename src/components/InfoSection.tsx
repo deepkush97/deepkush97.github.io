@@ -13,11 +13,13 @@ export const InfoSection: FC<InfoSectionProps> = ({
   const { number, text } = navigation[id];
   return (
     <section id={id} className="min-h-80v flex flex-col py-36 md:py-28 w-full">
-      <h3 className={`text-2xl ${classes.textWhite}`}>
+      <h3
+        className={`text-2xl flex items-center space-x-1 ${classes.textWhite}`}
+      >
         <span className={`${classes.textAccent} font-mono pl-10`}>
           {number}.
         </span>{" "}
-        {text}
+        <span>{text}</span>
       </h3>
       {children}
     </section>

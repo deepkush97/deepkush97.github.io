@@ -174,8 +174,8 @@ and experience from other people around me. I am really into as much
 knowledge and experience, every other small gold nuggets of the
 industry.`;
 
-export const experiences = {
-  fourth: {
+export const experiences = [
+  {
     companyName: "Intellect Design Arena Limited",
     location: "Delhi, India",
     designation: "Associate Consultant",
@@ -187,7 +187,7 @@ export const experiences = {
       "Working on NodeJS, Python, Java, and JavaScript.",
     ],
   },
-  third: {
+  {
     companyName: "AtliQ Technologies",
     location: "Vadodara, Gujarat",
     designation: "Software Engineer",
@@ -197,7 +197,7 @@ export const experiences = {
       "Worked mainly on NodeJS, React and Laravel.",
     ],
   },
-  second: {
+  {
     companyName: "Matrix Comsec Private Limited",
     location: "Vadodara, Gujarat",
     designation: "Engineer (Software Department)",
@@ -208,7 +208,7 @@ export const experiences = {
       "Successfully analyzed the problem, developed and provided a feasible solution single handed.",
     ],
   },
-  first: {
+  {
     companyName: "SSM Infotech Private Limited",
     location: "Surat, Gujarat",
     designation: "Software Engineer",
@@ -220,7 +220,7 @@ export const experiences = {
       "Managed the team and product with Manager and converted the requirements of the product into highly dynamic and extensible software.",
     ],
   },
-};
+];
 
 export const socials = [
   {

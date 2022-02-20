@@ -25,7 +25,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Recursive", ...defaultTheme.fontFamily.sans],
+        sans: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
         mono: ["DM Mono", ...defaultTheme.fontFamily.mono],
       },
       colors: {
@@ -69,6 +69,7 @@ module.exports = {
         },
       },
       height: {
+        1.5: "0.375rem",
         "85v": "85vh",
         "80v": "80vh",
         "75v": "75vh",
@@ -76,6 +77,7 @@ module.exports = {
         "60v": "60vh",
       },
       minHeight: {
+        1.5: "0.375rem",
         "85v": "85vh",
         "80v": "80vh",
         "75v": "75vh",
@@ -83,11 +85,21 @@ module.exports = {
         "60v": "60vh",
       },
       maxHeight: {
+        1.5: "0.375rem",
         "85v": "85vh",
         "80v": "80vh",
         "75v": "75vh",
         "70v": "70vh",
         "60v": "60vh",
+      },
+      width: {
+        1.5: "0.375rem",
+      },
+      minWidth: {
+        1.5: "0.375rem",
+      },
+      maxWidth: {
+        1.5: "0.375rem",
       },
     },
   },
