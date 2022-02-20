@@ -10,7 +10,7 @@ export const AboutSection = () => {
         <div className="w-full md:w-2/3 py-4 px-6 md:px-10">{about}</div>
         <div className="w-full md:w-1/3  flex items-center justify-center">
           <div
-            className={`w-64 h-64 flex justify-center items-center relative rounded-md bg-cover transform transition duration-200 ${classes.hoverRing}`}
+            className={`border-2 ${classes.borderDark} w-64 h-64 flex justify-center items-center relative bg-cover transform transition shadow-m hover:shadow-b duration-300 `}
             style={{ backgroundImage: 'url("./me.jpg")' }}
           ></div>
         </div>

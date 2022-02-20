@@ -12,5 +12,6 @@ export const classes = {
   textAccent: "text-aquamarine-500",
   textHover: "hover:text-aquamarine-500",
   border: "border-aquamarine-500",
+  borderDark: "border-dark-700",
   hoverRing: "hover:ring-4 hover:ring-aquamarine-800 hover:ring-opacity-40",
 };

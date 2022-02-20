@@ -32,7 +32,7 @@ export const siteName = "deepkush97";
 export const githubLink = "https://github.com/deepkush97";
 export const title = "DeepKush";
 export const applicationDescription =
-  "Deepanshu Kushwaha is a Software Engineer who has experience in NodeJS, React and .NET Core, ASP.NET Core and many more things.";
+  "Deepanshu Kushwaha is a Software Engineer who has experience in Node.js, React.js and .NET Core, ASP.NET Core and many more things.";
 export const locale = "en";
 
 export const navigation = {

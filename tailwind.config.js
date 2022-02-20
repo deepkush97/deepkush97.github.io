@@ -101,6 +101,14 @@ module.exports = {
       maxWidth: {
         1.5: "0.375rem",
       },
+      boxShadow: {
+        vb: "0.75rem 0.75rem 0px 0px rgba(5,12,22,0.75)",
+        b: "0.5rem 0.5rem 0px 0px rgba(5,12,22,0.75)",
+        m: "0.375rem 0.375rem 0px 0px rgba(5,12,22,0.75)",
+        s: "0.25rem 0.25rem 0px 0px rgba(5,12,22,0.75)",
+        sx: "0.125rem 0.125rem 0px 0px rgba(5,12,22,0.75)",
+        "inner-bg": "inset 0 0.125rem 1.25rem 1.25rem rgba(37,39,77,1)",
+      },
     },
   },
   plugins: [],

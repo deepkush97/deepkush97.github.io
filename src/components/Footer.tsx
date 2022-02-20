@@ -14,7 +14,7 @@ export const Footer: FC = () => {
               <div
                 className={`text-sm text- font-semibold py-1 text-center md:text-left`}
               >
-                Created By {title}
+                Created with ❤️ by {title}
               </div>
             </div>
             <div className="w-full md:w-8/12 px-4 mt-2 md:mt-0">

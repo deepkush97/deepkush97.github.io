@@ -18,7 +18,7 @@ export const InfoSection: FC<InfoSectionProps> = ({
       >
         <span className={`${classes.textAccent} font-mono pl-10`}>
           {number}.
-        </span>{" "}
+        </span>
         <span>{text}</span>
       </h3>
       {children}
