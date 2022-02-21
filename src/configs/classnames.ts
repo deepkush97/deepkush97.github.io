@@ -14,4 +14,6 @@ export const classes = {
   border: "border-aquamarine-500",
   borderDark: "border-dark-700",
   hoverRing: "hover:ring-4 hover:ring-aquamarine-800 hover:ring-opacity-40",
+  underline:
+    "after:block after:w-0 after:border-b-2 after:border-transparent after:hover:border-aquamarine-500 after:hover:w-full after:transition-all after:duration-300",
 };

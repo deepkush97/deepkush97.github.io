@@ -41,7 +41,7 @@ export const FooterLink: FC<FooterLinkProps> = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
-      className={`${classes.textBase} ${classes.textHover} text-sm font-semibold block py-1 px-3`}
+      className={`${classes.textBase} ${classes.textHover} ${classes.underline} text-sm font-semibold block py-1 px-3`}
     >
       {children}
     </button>

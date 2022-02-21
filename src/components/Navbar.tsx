@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between pb-4 md:py-8  navbar-expand-lg`}
+        className={`sticky top-0 w-full z-20 ${classes.background.base} backdrop-blur-lg bg-opacity-75 flex flex-wrap items-center justify-between pb-4 md:py-4  navbar-expand-lg`}
       >
         <div className="container px-6 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full flex justify-center md:w-auto md:static md:block md:justify-start">
@@ -46,7 +46,7 @@ export const NavItem: FC<NavItemProps> = ({ id, number, title }) => {
   return (
     <Link href={`/#${id}`}>
       <a
-        className={`${classes.textBase} ${classes.textHover} text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap`}
+        className={`${classes.textBase} ${classes.textHover} text-sm leading-relaxed inline-block mr-4 pt-2 pb-1 whitespace-nowrap  ${classes.underline}`}
       >
         <span className={`${classes.textAccent} font-mono`}>{number}.</span>{" "}
         {title}

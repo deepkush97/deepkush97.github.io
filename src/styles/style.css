@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply select-none;
+  }
+
   html {
     @apply scroll-smooth;
   }
+
   ::-webkit-scrollbar {
     @apply h-1.5 w-1.5;
   }
