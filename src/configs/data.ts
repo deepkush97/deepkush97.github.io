@@ -1,5 +1,6 @@
 import { AspNetCoreLogo } from "../components/logos/backend/AspNetCoreLogo";
 import { NodejsLogo } from "../components/logos/backend/NodejsLogo";
+import { WebSocketLogo } from "../components/logos/backend/WebSocketLogo";
 import { MongoDbLogo } from "../components/logos/database/MongoDbLogo";
 import { MsSqlLogo } from "../components/logos/database/MsSqlLogo";
 import { MySqlLogo } from "../components/logos/database/MySqlLogo";
@@ -26,7 +27,6 @@ import { GitLabLogo } from "../components/logos/tools/GitLabLogo";
 import { GitLogo } from "../components/logos/tools/GitLogo";
 import { VisualStudioLogo } from "../components/logos/tools/VisualStudioLogo";
 import { VscodeLogo } from "../components/logos/tools/VscodeLogo";
-import { TechToken } from "../components/TechToken";
 
 export const siteName = "deepkush97";
 export const githubLink = "https://github.com/deepkush97";
@@ -91,6 +91,10 @@ export const skills = [
       {
         title: "ASP.NET Core",
         iconComponent: AspNetCoreLogo,
+      },
+      {
+        title: "Web Sockets",
+        iconComponent: WebSocketLogo,
       },
     ],
   },
