@@ -16,7 +16,11 @@ export const Navbar = () => {
                 className={`${classes.textBase} flex items-center justify-center text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase`}
               >
                 <span className={`${classes.textAccent} text-base`}>DK </span>
-                <span className="ml-2">{title}</span>
+                <span
+                  className={`${classes.textBase} ${classes.textHover} duration-200 ml-2`}
+                >
+                  {title}
+                </span>
               </a>
             </Link>
           </div>

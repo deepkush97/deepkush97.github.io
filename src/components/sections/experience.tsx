@@ -44,7 +44,9 @@ export const TabButton: FC<TabButtonProps> = ({ isActive, title, onClick }) => {
     <button
       className={`${classes.background.hoverTransparentAccent} ${
         classes.textAccent
-      }  text-sm font-mono py-2 px-2 md:px-4 border ${classes.border} ${
+      }  text-sm font-mono py-2 px-2 md:px-4 border duration-200 ${
+        classes.border
+      } ${
         isActive
           ? ` ${classes.background.transparentAccent}`
           : " bg-transparent "

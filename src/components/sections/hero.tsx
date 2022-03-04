@@ -26,7 +26,7 @@ export const HeroSection = () => {
       </div>
       <Link href={`/#${contactSectionInfo.id}`}>
         <a
-          className={`bg-transparent ${classes.background.hoverTransparentAccent} ${classes.textAccent} inline-block font-normal font-mono my-4 py-4 px-6 border ${classes.border}`}
+          className={`bg-transparent ${classes.background.hoverTransparentAccent} duration-200 ${classes.textAccent} inline-block font-normal font-mono my-4 py-4 px-6 border ${classes.border}`}
         >
           Contact me
         </a>

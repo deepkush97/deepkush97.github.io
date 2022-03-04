@@ -17,7 +17,7 @@ export const SocialMediaCard: FC<SocialMediaCardProps> = ({
 }) => {
   return (
     <div
-      className={`p-4 mx-8 md:mx-3 w-full md:w-1/4 flex space-y-4 flex-col justify-between text-center rounded shadow-2xl ${classes.background.dark} hover:transform duration-200`}
+      className={`p-4 mx-8 md:mx-3 w-full md:w-1/4 flex space-y-4 flex-col justify-between text-center rounded shadow-2xl ${classes.background.dark} duration-200 ${classes.hoverShadowAccent}`}
     >
       <h4 className={`text-xl ${classes.textWhite}`}>
         <i className={`${iconClass} fa-2x`}></i>

@@ -7,6 +7,7 @@ export const classes = {
     transparentAccent: "bg-aquamarine-800 bg-opacity-20",
     hoverTransparentAccent: "hover:bg-aquamarine-800 hover:bg-opacity-20",
   },
+  hoverShadowAccent: "hover:shadow-lg hover:shadow-aquamarine-500/25",
   textBase: "text-light-400",
   textWhite: "text-light-100",
   textAccent: "text-aquamarine-500",

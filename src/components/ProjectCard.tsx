@@ -19,7 +19,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`rounded shadow-xl mx-6 my-3 p-4 w-full md:w-1/3 flex flex-col h-60 ${classes.background.dark} `}
+      className={`rounded shadow-xl mx-6 my-3 p-4 w-full md:w-1/3 flex flex-col h-60 ${classes.background.dark} duration-200 ${classes.hoverShadowAccent}`}
     >
       <div className="flex justify-between items-center mb-4">
         <div className="flex">

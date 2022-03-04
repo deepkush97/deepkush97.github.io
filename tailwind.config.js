@@ -109,6 +109,7 @@ module.exports = {
         sx: "0.125rem 0.125rem 0px 0px rgba(5,12,22,0.75)",
         "inner-bg": "inset 0 0.125rem 1.25rem 1.25rem rgba(37,39,77,1)",
       },
+      boxShadowColor: ({ theme }) => theme("theme.extend.colors"),
     },
   },
   plugins: [],
