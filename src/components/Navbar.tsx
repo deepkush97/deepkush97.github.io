@@ -30,7 +30,7 @@ export const Navbar = () => {
                 key={nav.id}
                 id={nav.id}
                 number={nav.number}
-                title={nav.text}
+                text={nav.text}
               />
             ))}
           </div>
@@ -43,17 +43,17 @@ export const Navbar = () => {
 interface NavItemProps {
   id: string;
   number: string;
-  title: string;
+  text: string;
 }
 
-export const NavItem: FC<NavItemProps> = ({ id, number, title }) => {
+export const NavItem: FC<NavItemProps> = ({ id, number, text }) => {
   return (
     <Link href={`/#${id}`}>
       <a
         className={`${classes.textBase} ${classes.textHover} text-sm leading-relaxed inline-block mr-4 pt-2 pb-1 whitespace-nowrap  ${classes.underline}`}
       >
         <span className={`${classes.textAccent} font-mono`}>{number}.</span>{" "}
-        {title}
+        {text}
       </a>
     </Link>
   );
