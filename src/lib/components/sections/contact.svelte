@@ -10,7 +10,7 @@
 			<SocialMediaCard
 				description={social.description}
 				url={social.url}
-				iconClass={social.iconClass}
+				icon={social.icon}
 				linkText={social.linkText}
 			/>
 		{/each}

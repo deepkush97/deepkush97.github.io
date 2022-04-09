@@ -7,6 +7,11 @@
 
 	let openTab = 0;
 	let selected = experiences[openTab];
+
+	function updateTabValue(index) {
+		openTab = index;
+		selected = experiences[openTab];
+	}
 </script>
 
 <InfoSection id="experience">
@@ -15,7 +20,7 @@
 			{#each experiences as experience, index}
 				<TabButton
 					isActive={openTab === index}
-					onClick={() => (openTab = index)}
+					onClick={() => updateTabValue(index)}
 					title={experience.timePeriod}
 				/>
 			{/each}

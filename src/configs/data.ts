@@ -27,6 +27,10 @@ import GitLabLogo from '../lib/components/logos/tools/GitLabLogo.svelte';
 import GitLogo from '../lib/components/logos/tools/GitLogo.svelte';
 import VisualStudioLogo from '../lib/components/logos/tools/VisualStudioLogo.svelte';
 import VscodeLogo from '../lib/components/logos/tools/VscodeLogo.svelte';
+import Github from '../lib/components/logos/socials/Github.svelte';
+import Instagram from '../lib/components/logos/socials/Instagram.svelte';
+import LinkedIn from '../lib/components/logos/socials/LinkedIn.svelte';
+import Mail from '../lib/components/logos/socials/Mail.svelte';
 
 export const siteName = 'deepkush97';
 export const githubLink = 'https://github.com/deepkush97';
@@ -230,25 +234,25 @@ export const socials = [
 	{
 		description: 'To have a formal conversation or to share something with me.',
 		url: 'mailto:kushwaha97deepanshu@gmail.com',
-		iconClass: 'far fa-envelope',
+		icon: Mail,
 		linkText: 'Mail me!'
 	},
 	{
 		description: 'To see my projects, my repositories and my personal work.',
 		url: 'https://github.com/deepkush97',
-		iconClass: 'fab fa-github',
+		icon: Github,
 		linkText: 'Visit me!'
 	},
 	{
 		description: 'To connect to me professionally and build network.',
 		url: 'https://www.linkedin.com/in/leftisfame/',
-		iconClass: 'fab fa-linkedin',
+		icon: LinkedIn,
 		linkText: 'Connect with me!'
 	},
 	{
 		description: 'To get to know me personally. I am another person in real.',
 		url: 'https://www.instagram.com/leftisfame',
-		iconClass: 'fab fa-instagram',
+		icon: Instagram,
 		linkText: 'Follow me!'
 	}
 ];

@@ -484,6 +484,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-44{
   margin: 11rem;
 }
+.m-4{
+  margin: 1rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -561,6 +564,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-8{
   height: 2rem;
 }
+.h-20{
+  height: 5rem;
+}
+.h-12{
+  height: 3rem;
+}
 .min-h-full{
   min-height: 100%;
 }
@@ -584,6 +593,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-8{
   width: 2rem;
+}
+.w-20{
+  width: 5rem;
+}
+.w-12{
+  width: 3rem;
 }
 .min-w-0{
   min-width: 0px;
@@ -669,6 +684,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded{
   border-radius: 0.25rem;
+}
+.rounded-full{
+  border-radius: 9999px;
 }
 .border{
   border-width: 1px;
@@ -885,6 +903,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
