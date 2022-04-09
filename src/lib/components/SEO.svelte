@@ -9,7 +9,7 @@
 <svelte:head>
 	<title>{`${title} | ${siteTitle}`}</title>
 	<meta name="description" content={description} />
-
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />

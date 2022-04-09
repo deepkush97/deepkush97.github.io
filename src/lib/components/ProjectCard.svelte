@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { classes } from '../../configs/classnames';
+	import ExternalLink from './logos/ExternalLink.svelte';
 
 	export let url: string;
 	export let repoLink: string;
@@ -31,7 +32,7 @@
 					title="Open live demo"
 					class={`bg-transparent hover:bg-aquamarine-800 hover:bg-opacity-20 ${classes.textBase} ${classes.textHover} font-normal font-mono py-1 px-2 rounded`}
 				>
-					<i class="fas fa-external-link-square-alt" />
+					<ExternalLink className="w-8 h-8" />
 				</a>
 			{/if}
 		</div>

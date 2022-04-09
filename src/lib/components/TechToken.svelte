@@ -8,6 +8,6 @@
 <div
 	class={`flex flex-col items-center ${classes.background.dark} p-4 rounded shadow-lg ${classes.hoverShadowAccent} duration-200 cursor-default gap-4`}
 >
-	<IconComponent class={`h-16 w-16 ${classes.textAccent}`} />
+	<svelte:component this={iconComponent} className={`h-16 w-16 ${classes.textAccent}`} />
 	<p class={`${classes.textBase} text-center`}>{title}</p>
 </div>
