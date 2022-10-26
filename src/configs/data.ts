@@ -125,7 +125,7 @@ export const skills = [
         iconComponent: MsSqlLogo,
       },
       {
-        title: "PostreSQL",
+        title: "PostgreSQL",
         iconComponent: PostgreSqlLogo,
       },
       {
