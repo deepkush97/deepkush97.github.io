@@ -6,7 +6,7 @@ const withOpacity =
 		opacityValue !== undefined ? `rgba(${rgbValue},${opacityValue})` : `rgb(${rgbValue})`;
 
 module.exports = {
-	content: ['./src/**/*.{js,ts,svelte}'],
+	content: ['./src/**/*.{js,ts,svelte,html}'],
 	theme: {
 		fontSize: {
 			xs: '0.75rem',
