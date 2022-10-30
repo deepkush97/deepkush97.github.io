@@ -4,8 +4,8 @@
 	import SEO from '../lib/components/SEO.svelte';
 	import { classes } from '../configs/classnames';
 	import { siteName, applicationDescription } from '../configs/data';
+	import './styles.css';
 
-	import '../styles/tailwind-output.css';
 </script>
 
 <SEO
