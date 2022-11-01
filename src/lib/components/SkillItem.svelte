@@ -1,15 +1,15 @@
 <script lang="ts">
-	import { classes } from '../../configs/classnames';
-	import TechToken from './TechToken.svelte';
-	export let title: string;
-	export let items: { title: string; iconComponent: any }[];
+	import type { SvelteComponent } from 'svelte';
+
+	export let itemTitle: string;
+	export let iconComponent: typeof SvelteComponent;
 </script>
 
-<div class="px-6 md:px-10 space-y-4">
-	<h4 class={`text-lg ${classes.textWhite}`}>{title}</h4>
-	<div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 md:gap-x-12">
-		{#each items as item}
-			<TechToken {...item} />
-		{/each}
+<li class="relative group">
+	<span class="group-hover:underline font-semibold cursor-default">{itemTitle}</span>
+	<div
+		class="w-20 h-20 hidden group-hover:flex items-center justify-center absolute p-2 top-0 bottom-0 right-0 bg-white dark:bg-dark-700 transition-all duration-200 z-20 border-2 border-gray-900 dark:border-light-100"
+	>
+		<svelte:component this={iconComponent} className="dark:text-aquamarine-500" />
 	</div>
-</div>
+</li>

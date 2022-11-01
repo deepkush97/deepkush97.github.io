@@ -1,52 +1,35 @@
 <script lang="ts">
-	import { classes } from '../../configs/classnames';
-	import ExternalLink from './logos/ExternalLink.svelte';
+	import ActionItem from './ActionItem.svelte';
 
-	export let url: string;
-	export let repoLink: string;
-	export let title: string;
-	export let description: string;
-	export let techStack: string[];
+	export let repoLink = '';
+	export let title = '';
+	export let description = '';
+	export let url = '';
+	export let techStack: string[] = [];
 </script>
 
-<div
-	class={`rounded shadow-xl mx-6 my-3 p-4 w-full md:w-1/3 flex flex-col h-60 ${classes.background.dark} duration-200 ${classes.hoverShadowAccent}`}
->
-	<div class="flex justify-between items-center mb-4">
-		<div class="flex">
-			<a
-				href={repoLink}
-				target="_blank"
-				rel="noreferrer"
-				class={`flex-1 text-lg ${classes.textWhite} ${classes.textHover} ${classes.underline}`}
-			>
-				{title}
-			</a>
-		</div>
-		<div class="flex justify-start">
-			{#if url}
-				<a
-					href={url}
-					target="_blank"
-					rel="noreferrer"
-					title="Open live demo"
-					class={`bg-transparent hover:bg-aquamarine-800 hover:bg-opacity-20 ${classes.textBase} ${classes.textHover} font-normal font-mono py-1 px-2 rounded`}
-				>
-					<ExternalLink className="w-8 h-8" />
-				</a>
-			{/if}
-		</div>
+<div class="flex flex-col gap-4 justify-between pb-14 h-full">
+	<div class="flex flex-col space-y-2 h-full ">
+		<a
+			class="font-semibold text-lg underline dark:text-aquamarine-500"
+			href={repoLink}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			{title}
+		</a>
+		<p class="flex-1">{description}</p>
+		{#if url}
+			<ActionItem className="border-2" ele="a" href={url} external>Live Link</ActionItem>
+		{/if}
 	</div>
-	<p class="text-sm flex-1">{description}</p>
-
-	<div class="flex flex-wrap text-xs gap-1">
-		{#each techStack as stack, index}
-			<span
-				class={`bg-transparent ${classes.textAccent} inline-block font-mono  px-1 border ${classes.border}`}
-				title={stack}
+	<ul class="flex w-full gap-2 flex-wrap">
+		{#each techStack as point}
+			<li
+				class="border-2 border-gray-900 dark:border-light-100 px-2 text-sm bg-white dark:bg-dark-700 dark:text-aquamarine-500"
 			>
-				{stack}
-			</span>
+				{point}
+			</li>
 		{/each}
-	</div>
+	</ul>
 </div>

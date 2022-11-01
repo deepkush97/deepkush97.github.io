@@ -1,5 +1,53 @@
-@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	@apply scroll-pt-14 scroll-smooth;
+}
+
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Thin.ttf');
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-ExtraLight.ttf');
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Light.ttf');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Regular.ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-SemiBold.ttf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-ExtraBold.ttf');
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'lexend';
+	src: url('/fonts/Lexend-Black.ttf');
+	font-weight: 900;
+}

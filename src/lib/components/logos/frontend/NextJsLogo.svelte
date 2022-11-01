@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let className;
+	export let className: string | undefined;
 </script>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={className} fill="currentColor">

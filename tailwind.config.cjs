@@ -1,113 +1,71 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultConfig = require('tailwindcss/stubs/defaultConfig.stub');
 
-const withOpacity =
-	(rgbValue) =>
-	({ opacityValue }) =>
-		opacityValue !== undefined ? `rgba(${rgbValue},${opacityValue})` : `rgb(${rgbValue})`;
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{js,ts,svelte,html}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
 	theme: {
-		fontSize: {
-			xs: '0.75rem',
-			sm: '0.875rem',
-			base: '1rem',
-			lg: '1.125rem',
-			xl: '1.25rem',
-			'2xl': '1.5rem',
-			'3xl': '1.875rem',
-			'4xl': '2.25rem',
-			'5xl': '3rem',
-			'6xl': '4rem',
-			'7xl': '5rem'
-		},
 		extend: {
 			fontFamily: {
-				sans: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
-				mono: ['DM Mono', ...defaultTheme.fontFamily.mono]
+				sans: ['lexend', ...defaultConfig.theme.fontFamily.sans]
+			},
+			spacing: {
+				13: '3.25rem',
+				102: '31.25rem',
+				112: '35rem',
+				120: '37.5rem'
+			},
+			backgroundSize: {
+				'800%': '800%'
 			},
 			colors: {
 				light: {
-					DEFAULT: withOpacity('136,146,176'),
-					50: withOpacity('233,234,240'),
-					100: withOpacity('222,225,233'),
-					200: withOpacity('200,205,219'),
-					300: withOpacity('179,185,204'), //light
-					400: withOpacity('157,166,190'),
-					500: withOpacity('136,146,176'), //base
-					600: withOpacity('105,118,156'), //dark
-					700: withOpacity('84,94,126'),
-					800: withOpacity('63,71,96'),
-					900: withOpacity('43,49,65')
+					DEFAULT: '#8892b0',
+					50: '#e9eaf0',
+					100: '#dee1e9',
+					200: '#c8cddb',
+					300: '#b3b9cc', //light
+					400: '#9da6be',
+					500: '#8892b0', //base
+					600: '#69769c', //dark
+					700: '#545e7e',
+					800: '#3f4760',
+					900: '#2b3141'
 				},
 				dark: {
-					DEFAULT: withOpacity('10,25,47'),
-					50: withOpacity('90,142,220'),
-					100: withOpacity('67,127,215'),
-					200: withOpacity('40,99,186'),
-					300: withOpacity('30,74,140'), //light
-					400: withOpacity('20,50,93'),
-					500: withOpacity('10,25,47'), //base
-					600: withOpacity('7,18,34'),
-					700: withOpacity('5,12,22'), //dark
-					800: withOpacity('2,5,9'),
-					900: withOpacity('0,0,0')
+					DEFAULT: '#0a192f',
+					50: '#5a8edc',
+					100: '#437fd7',
+					200: '#2863ba',
+					300: '#1e4a8c', //light
+					400: '#14325d',
+					500: '#0a192f', //base
+					600: '#071222',
+					700: '#050c16', //dark
+					800: '#020509',
+					900: '#000000'
 				},
 				aquamarine: {
-					50: withOpacity('247,255,253'),
-					100: withOpacity('240,255,251'),
-					200: withOpacity('216,255,246'),
-					300: withOpacity('193,255,240'),
-					400: withOpacity('147,255,229'),
-					500: withOpacity('100,255,218'),
-					600: withOpacity('90,230,196'),
-					700: withOpacity('75,191,164'),
-					800: withOpacity('60,153,131'),
-					900: withOpacity('49,125,107')
+					50: '#f7fffd',
+					100: '#f0fffb',
+					200: '#d8fff6',
+					300: '#c1fff0',
+					400: '#93ffe5',
+					500: '#64ffda',
+					600: '#5ae6c4',
+					700: '#4bbfa4',
+					800: '#3c9983',
+					900: '#317d6b'
 				}
-			},
-			height: {
-				1.5: '0.375rem',
-				'85v': '85vh',
-				'80v': '80vh',
-				'75v': '75vh',
-				'70v': '70vh',
-				'60v': '60vh'
-			},
-			minHeight: {
-				1.5: '0.375rem',
-				'85v': '85vh',
-				'80v': '80vh',
-				'75v': '75vh',
-				'70v': '70vh',
-				'60v': '60vh'
-			},
-			maxHeight: {
-				1.5: '0.375rem',
-				'85v': '85vh',
-				'80v': '80vh',
-				'75v': '75vh',
-				'70v': '70vh',
-				'60v': '60vh'
-			},
-			width: {
-				1.5: '0.375rem'
-			},
-			minWidth: {
-				1.5: '0.375rem'
-			},
-			maxWidth: {
-				1.5: '0.375rem'
-			},
-			boxShadow: {
-				vb: '0.75rem 0.75rem 0px 0px rgba(5,12,22,0.75)',
-				b: '0.5rem 0.5rem 0px 0px rgba(5,12,22,0.75)',
-				m: '0.375rem 0.375rem 0px 0px rgba(5,12,22,0.75)',
-				s: '0.25rem 0.25rem 0px 0px rgba(5,12,22,0.75)',
-				sx: '0.125rem 0.125rem 0px 0px rgba(5,12,22,0.75)',
-				'inner-bg': 'inset 0 0.125rem 1.25rem 1.25rem rgba(37,39,77,1)'
-			},
-			boxShadowColor: ({ theme }) => theme('theme.extend.colors')
+			}
+		},
+		animation: {
+			'walk-anim': 'walk-anim 1s infinite steps(7)'
+		},
+		keyframes: {
+			'walk-anim': {
+				to: { 'background-position': '100% 0' }
+			}
 		}
 	},
 	plugins: []
