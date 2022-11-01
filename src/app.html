@@ -2,11 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<link id="favicon-link" rel="icon" href="%sveltekit.assets%/dark-favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-prefetch>
-		<div class="scroll-smooth">%sveltekit.body%</div>
+	<body
+		data-sveltekit-prefetch
+		class="antialiased max-h-screen max-w-screen bg-gray-200 dark:bg-dark-500 text-gray-900 dark:text-light-200 transition-all duration-150"
+	>
+		%sveltekit.body%
 	</body>
 </html>

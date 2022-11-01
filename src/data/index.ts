@@ -4,9 +4,7 @@ import WebSocketLogo from '../lib/components/logos/backend/WebSocketLogo.svelte'
 import MongoDbLogo from '../lib/components/logos/database/MongoDbLogo.svelte';
 import MsSqlLogo from '../lib/components/logos/database/MsSqlLogo.svelte';
 import MySqlLogo from '../lib/components/logos/database/MySqlLogo.svelte';
-import PostgreSqlLogo from '../lib/components/logos/database/PostgreSqlLogo.svelte';
 import BootstrapLogo from '../lib/components/logos/frontend/BootstrapLogo.svelte';
-import FlutterLogo from '../lib/components/logos/frontend/FlutterLogo.svelte';
 import JqueryLogo from '../lib/components/logos/frontend/JqueryLogo.svelte';
 import NextJsLogo from '../lib/components/logos/frontend/NextJsLogo.svelte';
 import ReactJsLogo from '../lib/components/logos/frontend/ReactJsLogo.svelte';
@@ -21,31 +19,11 @@ import JavaLogo from '../lib/components/logos/languages/JavaLogo.svelte';
 import JavaScriptLogo from '../lib/components/logos/languages/JavaScriptLogo.svelte';
 import PythonLogo from '../lib/components/logos/languages/PythonLogo.svelte';
 import TypeScriptLogo from '../lib/components/logos/languages/TypeScriptLogo.svelte';
-import AndroidStudioLogo from '../lib/components/logos/tools/AndroidStudioLogo.svelte';
 import GitHubLogo from '../lib/components/logos/tools/GitHubLogo.svelte';
 import GitLabLogo from '../lib/components/logos/tools/GitLabLogo.svelte';
 import GitLogo from '../lib/components/logos/tools/GitLogo.svelte';
 import VisualStudioLogo from '../lib/components/logos/tools/VisualStudioLogo.svelte';
 import VscodeLogo from '../lib/components/logos/tools/VscodeLogo.svelte';
-import Github from '../lib/components/logos/socials/Github.svelte';
-import Instagram from '../lib/components/logos/socials/Instagram.svelte';
-import LinkedIn from '../lib/components/logos/socials/LinkedIn.svelte';
-import Mail from '../lib/components/logos/socials/Mail.svelte';
-
-export const siteName = 'deepkush97';
-export const githubLink = 'https://github.com/deepkush97';
-export const title = 'DeepKush';
-export const applicationDescription =
-	'Deepanshu Kushwaha is a Software Engineer who has experience in Node.js, React.js and .NET Core, ASP.NET Core and many more things.';
-export const locale = 'en';
-
-export const navigation = {
-	about: { id: 'about', text: 'About', number: '01' },
-	skills: { id: 'skills', text: 'Skills', number: '02' },
-	experience: { id: 'experience', text: 'Experience', number: '03' },
-	projects: { id: 'projects', text: 'Projects', number: '04' },
-	contact: { id: 'contact', text: 'Contact', number: '05' }
-};
 
 export const skills = [
 	{
@@ -72,12 +50,12 @@ export const skills = [
 				iconComponent: Css3Logo
 			},
 			{
-				title: 'Python (Limited)',
-				iconComponent: PythonLogo
-			},
-			{
 				title: 'Java (Limited)',
 				iconComponent: JavaLogo
+			},
+			{
+				title: 'Python (Limited)',
+				iconComponent: PythonLogo
 			},
 			{
 				title: 'C/C++ (Limited)',
@@ -105,16 +83,15 @@ export const skills = [
 	{
 		title: 'Frontend Development',
 		items: [
+			{ title: 'HTML', iconComponent: Html5Logo },
+			{ title: 'CSS', iconComponent: Css3Logo },
 			{ title: 'Next.js', iconComponent: NextJsLogo },
 			{ title: 'React.js', iconComponent: ReactJsLogo },
-			{ title: 'Redux', iconComponent: ReduxLogo },
-			{ title: 'Flutter', iconComponent: FlutterLogo },
-			{ title: 'Svelte', iconComponent: SvelteLogo },
-			{ title: 'Tailwind CSS', iconComponent: TailwindCssLogo },
+			{ title: 'Tailwind', iconComponent: TailwindCssLogo },
 			{ title: 'Bootstrap', iconComponent: BootstrapLogo },
 			{ title: 'JQuery', iconComponent: JqueryLogo },
-			{ title: 'HTML', iconComponent: Html5Logo },
-			{ title: 'CSS', iconComponent: Css3Logo }
+			{ title: 'Redux', iconComponent: ReduxLogo },
+			{ title: 'Svelte', iconComponent: SvelteLogo }
 		]
 	},
 	{
@@ -127,10 +104,6 @@ export const skills = [
 			{
 				title: 'MSSQL',
 				iconComponent: MsSqlLogo
-			},
-			{
-				title: 'PostreSQL',
-				iconComponent: PostgreSqlLogo
 			},
 			{
 				title: 'MongoDB',
@@ -150,14 +123,9 @@ export const skills = [
 				iconComponent: GitLogo
 			},
 			{
-				title: 'Android Studio',
-				iconComponent: AndroidStudioLogo
-			},
-			{
 				title: 'Visual Studio',
 				iconComponent: VisualStudioLogo
 			},
-
 			{
 				title: 'Github',
 				iconComponent: GitHubLogo
@@ -170,18 +138,6 @@ export const skills = [
 	}
 ];
 
-export const about = `I'm Deepanshu Kushwaha, a Software Engineer by profession. I've
-pursued my Bachelor Of Engineering in 2019 from Government Engineering
-College, Dahod. I have a keen passion to build beautiful and
-eye-sparkling software with a standard and well-built code base. I'm a
-person with a very enthusiastic and down-to-earth personality, but I
-like to watch stars and explore nature. I like to spend my time at
-work, developing, reading blogs and articles, and listening to music.
-I even engage myself in discussing, sharing, and absorbing knowledge
-and experience from other people around me. I am really into as much
-knowledge and experience, every other small gold nuggets of the
-industry.`;
-
 export const experiences = [
 	{
 		companyName: 'Intellect Design Arena Limited',
@@ -189,10 +145,10 @@ export const experiences = [
 		designation: 'Associate Consultant',
 		timePeriod: "Jun' 2021 - Present",
 		mentionablePoints: [
-			'Developing and maintaining ETL for Data Warehouse.',
-			'Price trends generation and development for analytics.',
-			'Development in Government e-Marketplace Application.',
-			'Working on NodeJS, Python, Java, and JavaScript.'
+			'Worked on different modules of Government e-Marketplace.',
+			'Data pipeline optimization and re-building the existing application.',
+			'Develop and deploy a integration module to production phase.',
+			'Working on Java, NodeJS, Python and JavaScript.'
 		]
 	},
 	{
@@ -230,34 +186,34 @@ export const experiences = [
 	}
 ];
 
-export const socials = [
-	{
-		description: 'To have a formal conversation or to share something with me.',
-		url: 'mailto:kushwaha97deepanshu@gmail.com',
-		icon: Mail,
-		linkText: 'Mail me!'
-	},
-	{
-		description: 'To see my projects, my repositories and my personal work.',
-		url: 'https://github.com/deepkush97',
-		icon: Github,
-		linkText: 'Visit me!'
-	},
-	{
-		description: 'To connect to me professionally and build network.',
-		url: 'https://www.linkedin.com/in/leftisfame/',
-		icon: LinkedIn,
-		linkText: 'Connect with me!'
-	},
-	{
-		description: 'To get to know me personally. I am another person in real.',
-		url: 'https://www.instagram.com/leftisfame',
-		icon: Instagram,
-		linkText: 'Follow me!'
-	}
-];
-
 export const projects = [
+	{
+		description: 'Sudoku game with three levels of difficulty and hints feature. ',
+		title: 'sudoku-solver-ts',
+		techStack: ['Typescript', 'Next.js', 'React.js', 'Tailwind'],
+		url: 'https://deepkush97.github.io/sudoku-solver-ts/',
+		repoLink: 'https://github.com/deepkush97/sudoku-solver-ts'
+	},
+	{
+		description: 'Flappy bird game using svelte, tailwind with typescript (of course).',
+		title: 'flappy-bird-ts',
+		techStack: ['Typescript', 'Svelte', 'Tailwind'],
+		url: 'https://deepkush97.github.io/flappy-bird-ts/',
+		repoLink: 'https://github.com/deepkush97/flappy-bird-ts'
+	},
+	{
+		description: 'Stream any RTSP stream and output to websocket for consumption by jsmpeg.',
+		title: 'node-rtsp-stream-ts',
+		techStack: ['Typescript', 'RTSP', 'Websocket'],
+		repoLink: 'https://github.com/deepkush97/node-rtsp-stream-ts'
+	},
+	{
+		description:
+			'A reddit clone using a server at backend with node, express, typeorm and postgres. The client is made with React with tailwind and SWR.',
+		title: 'read-it-ts',
+		techStack: ['Typescript', 'Node', 'TypeORM', 'PostgreSQL', 'React', 'Tailwind', 'SWR'],
+		repoLink: 'https://github.com/deepkush97/read-it-ts'
+	},
 	{
 		description:
 			'A note application which reside into your private browser and persist it in IndexedDB.',
@@ -296,26 +252,6 @@ export const projects = [
 		techStack: ['Typescript'],
 		url: 'https://www.npmjs.com/package/@deepkush97/logger-ts',
 		repoLink: 'https://github.com/deepkush97/logger-ts'
-	},
-	{
-		description: 'A small runner to generate npm install script for given project.',
-		title: 'npm-i-copier',
-		techStack: ['Javascript'],
-		url: 'https://www.npmjs.com/package/npm-i-copier',
-		repoLink: 'https://github.com/deepkush97/npm-i-copier'
-	},
-	{
-		description: 'Stream any RTSP stream and output to websocket for consumption by jsmpeg.',
-		title: 'node-rtsp-stream-ts',
-		techStack: ['Typescript', 'RTSP', 'Websocket'],
-		repoLink: 'https://github.com/deepkush97/node-rtsp-stream-ts'
-	},
-	{
-		description:
-			'A reddit clone using a server at backend with node, express, typeorm and postgres. The client is made with React with tailwind and SWR.',
-		title: 'read-it-ts',
-		techStack: ['Typescript', 'Node', 'TypeORM', 'PostgreSQL', 'React', 'Tailwind', 'SWR'],
-		repoLink: 'https://github.com/deepkush97/read-it-ts'
 	},
 	{
 		description:
